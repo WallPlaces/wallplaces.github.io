@@ -4,169 +4,188 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="color-scheme" content="light dark">
-    <link rel="icon" type="image/png" sizes="512x512" href="https://meetfed.github.io/home/assets/icons/mficon-512.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://meetfed.github.io/home/assets/icons/mficon-192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://meetfed.github.io/home/assets/icons/mftouch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://wallplaces.github.io/icon/web/icon-512-maskable.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://wallplaces.github.io/icon/web/icon-192-maskable.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://wallplaces.github.io/icon/web/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://meetfed.github.io/home/assets/icons/mficon-512-maskable.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://meetfed.github.io/home/assets/icons/mficon-192-maskable.png">
-    <link rel="icon" type="image/x-icon" sizes="any" href="https://meetfed.github.io/home/assets/icons/mffavicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="any" href="https://wallplaces.github.io/icon/web/favicon.ico">
     <link rel="manifest" href="https://meetfed.github.io/home/site.webmanifest">
     <title>Termos e Condições</title>
     <style>
         @font-face {
-            font-family: 'GoogleSans-Rounded';
-            src: url('https://meetfed.github.io/home/fonts/GoogleSans-Rounded.eot') format('embedded-opentype'),
-                 url('https://meetfed.github.io/home/fonts/GoogleSans-Rounded.eot?#iefix') format('embedded-opentype'),
-                 url('https://meetfed.github.io/home/fonts/GoogleSans-Rounded.woff2') format('woff2'),
-                 url('https://meetfed.github.io/home/fonts/GoogleSans-Rounded.woff') format('woff'),
-                 url('https://meetfed.github.io/home/fonts/GoogleSans-Rounded.ttf') format('truetype'),
-                 url('https://meetfed.github.io/home/fonts/GoogleSans-Rounded.svg#svgFontName') format('svg');
+            font-family: 'Poppins-Bold';
+            src: url('https://wallplaces.github.io/font/Poppins-Bold.ttf') format('truetype');
+            font-weight: bold;
         }
-        body { font-family: 'GoogleSans-Rounded', sans-serif;
+        @font-face {
+            font-family: 'Poppins-Regular';
+            src: url('https://wallplaces.github.io/font/Poppins-Regular.ttf') format('truetype');
+            font-weight: normal;
+        }
+        body {
+            font-family: 'Poppins-Regular', sans-serif;
             padding: 1em;
             word-wrap: break-word;
         }
-        a {
-            text-decoration: none;
+        h1, h2, b {
+            font-family: 'Poppins-Bold', sans-serif;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px; 
+        }
+        h3 {
+            font-size: 25px;
+            margin-top: 25px;
+            margin-bottom: 15px; 
+        }
+        h4 {
+            font-family: 'Poppins-Regular', sans-serif;
+            font-size: 10px;
+        }
+        div {
+            margin-bottom: 80px; 
+        }
+        .arrow-down {
+            position: fixed;
+            bottom: 80px;
+            left: 44.1%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            animation: bounce 2s infinite;
+            transition: opacity 0.5s ease;
+            z-index: 1000;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(35px); }
+        }
+        .hidden {
+            opacity: 0;
+        }
+        .animate {
+            opacity: 0;
+            transition: opacity 1s ease, transform 1.2s ease;
+        }
+        .animate.appear-up {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .animate.appear-down {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .animate.disappear-up {
+            transform: translateY(-50px);
+        }
+        .animate.disappear-down {
+            transform: translateY(50px);
         }
         @media (prefers-color-scheme: light) {
             body {
                 background-color: #fbf8ff;
                 color: #1a1b24;
+           .arrow-down {
+            filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(90%);
+        }
             }
-            a:link {
-                color: #4d6dff;
-            }
-            a:visited {
-                color: #4D6DFF;
-            }
-            a:hover {
-                color: #4D6DFF;
-            }
-            a:active {
-                color: #4D6DFF;
-            }
-            .meetfed img {
-                content: url('https://meetfed.github.io/home/assets/mfbannerd1.svg');
-            }
-            .note {
-                width: auto;
-                font-size: 9pt;
-                color: #001e2e;
-            }
+            a { color: #4d6dff; }
+            .note, h4 { color: #001e2e; }
         }
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: #101417;
                 color: #dfe3e7;
             }
-            a:link {
-                color: #8cb0c4;
-            }
-            a:visited {
-                color: #93cdf6;
-            }
-            a:hover {
-                color: #349ed9;
-            }
-            a:active {
-                color: #349ed9;
-            }
-            .meetfed img {
-                content: url('https://meetfed.github.io/home/assets/mfbannerl1.svg');
-            }
-            .note {
-                width: auto;
-                font-size: 9pt;
-                color: #c7e7ff;
-            }
+            a { color: #8cb0c4; }
+            .note, h4 { color: #c7e7ff; }
         }
-        .open-dialog-button {
-            font-family: 'GoogleSans-Rounded', sans-serif;
-            padding: 1em 1em; 
-            border: 0em;
-            border-radius: 1em;
-            background-color: #557e6d;
-            color: #e4f9ef;
-            cursor: pointer;
+        .note {
+            font-size: 9pt;
         }
-        .open-dialog-button:hover {
-            background-color: #89b4a1;
-            color: #254e3f;
-        }
-        .dialog-box {
-            font-family: 'GoogleSans-Rounded', sans-serif;
-            display: none;
-            width: 18em;
-            padding: 1em 1em;
-            border: 0em;
-            border-radius: 2em;
-            background-color: #cceede;
-            color: #0b3729;
-            word-wrap: break-word;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .close-dialog-button {
-            font-family: 'GoogleSans-Rounded', sans-serif;
-            padding: 1em 1em;
-            border: 0em;
-            border-radius: 1em;
-            background-color: #9d6960;
-            color: #feedea;
-            cursor: pointer;
-        }
-        .close-dialog-button:hover {
-            background-color: #d89d93;
-            color: #673b34;
-        }
-        .copy-dialog-button {
-            font-family: 'GoogleSans-Rounded', sans-serif;
-            padding: 1em 1em;
-            border: 0em;
-            border-radius: 1em;
-            background-color: #577b8d;
-            color: #e6f3fb;
-            cursor: pointer;
-        }
-        .copy-dialog-button:hover {
-            background-color: #8cb0c4;
-            color: #264b5c;
+        .arrow-down {
+            filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(90%);
         }
     </style>
 </head>
 <body>
-    <h1>Termos e Condições</h1>
-    <h2>Termos e Condições para todos os usuários e interessados no WallPlaces.</h2><br>
-    <p><b>1. Aceitação dos Termos</b></p>
-    <p>Ao acessar e utilizar o site WallPlaces, você concorda em cumprir e estar vinculado a estes Termos de Uso. Se você não concordar com qualquer parte destes termos, não deverá usar este site. O WallPlaces se reserva o direito de modificar estes termos a qualquer momento, e o seu uso contínuo do site após qualquer alteração constitui sua aceitação dos novos termos.</p><br>
-    <p><b>2. Conteúdo Gerado pelo Usuário</b></p>
-    <p>Os usuários podem enviar wallpapers para o WallPlaces para compartilhamento com a comunidade. Ao carregar um wallpaper, você concede ao WallPlaces uma licença não exclusiva, mundial e isenta de royalties para usar, reproduzir, modificar, publicar e distribuir seu conteúdo enviado. Você declara e garante que é o criador original do wallpaper ou que obteve todos os direitos e permissões necessários para enviar o conteúdo. Os usuários mantêm o direito de solicitar a remoção de seus wallpapers enviados a qualquer momento. Todos os wallpapers gerados pelos usuários serão licenciados sob a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Licença Creative Commons BY-NC-ND 4.0</a>, permitindo que outros compartilhem seu trabalho de forma não comercial, com atribuição e sem modificações.</p><br>
-    <p><b>3. Isenção de Responsabilidade</b></p>
-    <p>O WallPlaces não é responsável por qualquer violação de direitos autorais resultante de conteúdo gerado por usuários. Os usuários são os únicos responsáveis por garantir que os wallpapers que enviarem não violem os direitos de terceiros. O WallPlaces se reserva o direito de remover qualquer wallpaper enviado pelos usuários a qualquer momento e sem aviso prévio se uma reclamação de direitos autorais ou pedido de remoção for recebido do criador original ou titular dos direitos autorais.</p><br>
-    <p><b>4. Modificação dos Termos</b></p>
-    <p>O WallPlaces se reserva o direito de modificar estes Termos de Uso a qualquer momento. Quaisquer alterações serão eficazes imediatamente após serem publicadas no site. É sua responsabilidade revisar estes termos periodicamente para quaisquer atualizações. O uso contínuo do site WallPlaces após quaisquer modificações constitui sua aceitação dos novos termos. Se você não concordar com os termos modificados, deve parar de usar o site imediatamente.</p><br>
-    <p><b>5. Conteúdo Gerado por IA</b></p>
-    <p>O WallPlaces pode permitir o envio de wallpapers gerados por inteligência artificial (IA). Os usuários são responsáveis por fornecer os prompts que guiam a IA na geração de conteúdo. Ao enviar wallpapers gerados por IA, você afirma que possui os direitos para usar e distribuir o conteúdo gerado. O WallPlaces isenta-se de qualquer responsabilidade por conteúdo gerado tanto por usuários quanto por IA. Toda a responsabilidade por garantir que o conteúdo enviado não infrinja os direitos de propriedade intelectual de terceiros recai exclusivamente sobre o usuário. O WallPlaces se reserva o direito de remover qualquer wallpaper, seja gerado por usuário ou por IA, se necessário.</p><br>
-    <p><b>6. Acesso Gratuito e Código Aberto</b></p>
-    <p>Todo o conteúdo disponível no WallPlaces é fornecido gratuitamente para uso pessoal. O código-fonte do nosso site é de código aberto e está disponível para qualquer pessoa remixar, modificar e usar em seus próprios projetos, desde que a devida atribuição seja dada. Acreditamos que o acesso ao conteúdo criativo deve ser sempre gratuito e que todos devem ter a oportunidade de utilizar e compartilhar recursos sem custo. Os usuários podem usar os wallpapers livremente para fins pessoais, mas devem respeitar os termos de licenciamento associados.</p><br>
-    <p><b>7. Dados do Usuário e Visibilidade Pública</b></p>
-    <p>Qualquer dado enviado pelos usuários, incluindo imagens enviadas, nomes de autores, títulos de imagens ou qualquer outra informação, será publicamente visível no GitHub. Ao enviar conteúdo para o WallPlaces, você reconhece e aceita que suas submissões poderão ser acessadas e visualizadas por qualquer pessoa. O WallPlaces não coleta informações pessoais além do necessário para o funcionamento do site. Os usuários são incentivados a estar cientes das informações que escolhem compartilhar e a garantir que estão confortáveis com sua visibilidade pública. Ao enviar seu conteúdo, você garante que tem os direitos para compartilhar as informações e que elas não violam os direitos de terceiros.</p><br>
-    <p><b>8. Coleta de Dados e Exploração Comercial</b></p>
-    <p>O WallPlaces não tem o direito de coletar dados de usuários para fins de lucro ou exploração comercial. A plataforma se compromete a manter um ambiente livre e aberto para que os usuários compartilhem e acessem wallpapers. Qualquer informação coletada será exclusivamente para o funcionamento e melhoria do site. Os usuários podem confiar que suas contribuições não serão usadas para ganho comercial, e o WallPlaces não venderá ou comercializará qualquer dado de usuário para terceiros. <br><br>Todos os dados enviados para o WallPlaces estão disponíveis publicamente no GitHub e podem ser revisados pelos usuários a qualquer momento. Os usuários também têm o direito de solicitar a remoção de seu conteúdo da plataforma. Ao participar do WallPlaces, você reconhece que suas contribuições são transparentes e podem ser acessadas pela comunidade.</p><br>
-    <p><b>9. Alterações nos Termos</b></p>
-    <p>O WallPlaces reserva-se o direito de alterar estes Termos de Uso a qualquer momento. Quaisquer alterações entrarão em vigor imediatamente após serem publicadas no site. É sua responsabilidade revisar periodicamente esses termos para se manter atualizado com possíveis modificações. O uso contínuo do site após qualquer alteração constitui a aceitação dos novos termos. Caso não concorde com os termos modificados, você deve parar de usar o site imediatamente.</p><br>
-    <p><b>10. Conteúdo Gerado por IA</b></p>
-    <p>O WallPlaces pode permitir o envio de wallpapers gerados por inteligência artificial (IA). Os usuários são responsáveis por fornecer os prompts que guiam a IA na geração de conteúdo. Ao enviar wallpapers gerados por IA, você afirma que tem os direitos de usar e distribuir o conteúdo gerado. O WallPlaces se isenta de qualquer responsabilidade por conteúdos gerados tanto por usuários quanto por IA. Toda a responsabilidade por garantir que o conteúdo enviado não infrinja os direitos de propriedade intelectual de terceiros recai exclusivamente sobre o usuário. O WallPlaces reserva-se o direito de remover qualquer wallpaper, seja gerado por usuário ou por IA, se necessário.</p><br>
-    <p><b>11. Acesso Gratuito e Código Aberto</b></p>
-    <p>Todo o conteúdo disponível no WallPlaces é fornecido gratuitamente para uso pessoal. O código-fonte do nosso site é de código aberto e está disponível para qualquer pessoa remixar, modificar e usar em seus próprios projetos, desde que seja dada a devida atribuição. Acreditamos que o acesso ao conteúdo criativo deve ser sempre gratuito e que todos devem ter a oportunidade de utilizar e compartilhar recursos sem custo. Os usuários podem usar livremente os wallpapers para fins pessoais, mas devem respeitar os termos de licenciamento associados.</p><br>
-    <p><b>12. Dados do Usuário e Visibilidade Pública</b></p>
-    <p>Quaisquer dados enviados pelos usuários, incluindo imagens enviadas, nomes de autores, títulos de imagens ou qualquer outra informação, serão visíveis publicamente no GitHub. Ao enviar conteúdo para o WallPlaces, você reconhece e aceita que suas submissões podem ser acessadas e visualizadas por qualquer pessoa. O WallPlaces não coleta informações pessoais além do que é necessário para o funcionamento do site. Os usuários são incentivados a ter cuidado com as informações que escolhem compartilhar e a garantir que estão confortáveis com sua visibilidade pública. Ao enviar seu conteúdo, você garante que possui os direitos de compartilhá-lo e que não viola os direitos de terceiros.</p><br>
-    <p><b>13. Coleta de Dados e Exploração Comercial</p></b>
-    <p>O WallPlaces não tem o direito de coletar quaisquer dados de usuários para fins de lucro ou exploração comercial. A plataforma está comprometida em manter um ambiente livre e aberto para que os usuários compartilhem e acessem wallpapers. Qualquer informação coletada será exclusivamente para o funcionamento e a melhoria do site. Os usuários podem confiar que suas contribuições não serão usadas para ganho comercial, e o WallPlaces não venderá ou trocará quaisquer dados de usuários com terceiros. <br><br>Todos os dados enviados para o WallPlaces estão disponíveis publicamente no GitHub e podem ser revisados pelos usuários a qualquer momento. Os usuários também têm o direito de solicitar a remoção de seu conteúdo enviado da plataforma. Ao participar do WallPlaces, você reconhece que suas contribuições são transparentes e podem ser acessadas pela comunidade.</p><br>
-<div class="note">
-    <p><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Spiral%20Calendar.png" alt="Calendário Espiral" width="18" height="18" style="position: relative; top: 5px;" /> ·  Editado em 26 de setembro de 2024.</p>
-    <p><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Spiral%20Calendar.png" alt="Calendário Espiral" width="18" height="18" style="position: relative; top: 5px;" /> ·  Publicado em 26 de setembro de 2024.</p><br>
-</div>
+    <!-- Ícone da seta para baixo -->
+    <icon class="arrow-down" id="scrollArrow">
+        <img src="https://raw.githubusercontent.com/WallPlaces/wallplaces.github.io/refs/heads/main/icon/arrow_down.svg" alt="Scroll down">
+    </icon>
+    
+    <div class="animate disappear-down">
+    <h1>Termos de Uso</h1>
+    <h2>Termos e condições para todos os usuários do WallPlaces.</h2>
+    <h4>Edited on October 8, 2024.<br>Published on September 26, 2024.</h4></div><br>
+    
+    <!-- O restante do conteúdo permanece igual -->
+    <div class="animate disappear-down"><h3>Aceitação dos Termos</h3>
+    Ao baixar e usar o WallPlaces, você concorda automaticamente com estes Termos de Uso. É importante que você os leia cuidadosamente, pois eles regulam seu uso dos serviços do aplicativo e do site. Se você não concordar com os termos, não deve usar os serviços.</div><br>
+
+    <div class="animate disappear-down"><h3>Propriedade Intelectual</h3>
+    O WallPlaces, incluindo todos os direitos de propriedade intelectual sobre o aplicativo, é protegido pela legislação aplicável. Você não pode modificar, distribuir, ou criar trabalhos derivados do app sem a nossa permissão. O WallPlaces se reserva o direito de alterar o código do aplicativo, com exceção do site, que é de código aberto.</div><br>
+
+    <div class="animate disappear-down"><h3>Gratuidade e Alterações de Serviço</h3>
+    O WallPlaces e todos os wallpapers oferecidos são gratuitos e assim permanecerão. O WallPlaces se reserva o direito de modificar ou descontinuar funcionalidades do aplicativo ou do site a qualquer momento.</div><br>
+
+    <div class="animate disappear-down"><h3>Privacidade e Coleta de Dados</h3>
+    O WallPlaces não coleta dados pessoais diretamente. No entanto, utilizamos a API do <a href="https://onesignal.com/privacy_policy" target="_blank">OneSignal</a>, para enviar notificações ou orientar as funcionalidades. Estas APIs podem coletar informações conforme descrito em seus próprios Termos e Condições. O WallPlaces não utiliza esses dados para monetização.</div><br>
+
+    <div class="animate disappear-down"><h3>Compatibilidade, Atualizações e Conectividade</h3>
+    O WallPlaces é compatível apenas com Android 12 e superiores. O aplicativo será atualizado regularmente para melhorias e correções. Após o lançamento de uma nova versão, você terá até 1 semana para atualizar. Caso não faça isso, o aplicativo pode não funcionar corretamente, não receberá novos wallpapers e, em alguns casos, não exibirá wallpapers, pois versões antigas perderão conectividade com nossa API JSON.</div><br>
+
+    <div class="animate disappear-down"><h3>Envio e Licenciamento de Wallpapers</h3>
+    Usuários podem enviar wallpapers por meio do Google Forms. Ao enviar, você declara ser o proprietário ou ter os direitos necessários e concede ao WallPlaces permissão para utilizar e distribuir o conteúdo sob a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">licença Creative Commons BY-NC-ND 4.0</a>. Todos os wallpapers podem ser removidos mediante solicitação ou em caso de violação de direitos autorais.</div><br>
+
+    <div class="animate disappear-down"><h3>Licenciamento de Conteúdo</h3>
+    Todo o conteúdo do aplicativo, exceto o site, está sob a  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">licença Creative Commons BY-NC-ND 4.0</a>. O site é de código aberto e pode ser modificado, com exceção dos wallpapers, que também são licenciados sob  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">licença Creative Commons BY-NC-ND 4.0</a>.</div><br>
+
+    <div class="animate disappear-down"><h3>Alterações nos Termos</h3>
+    Os Termos de Uso podem ser modificados a qualquer momento, e a notificação dessas mudanças não é garantida. É responsabilidade do usuário revisar periodicamente os termos atualizados.</div><br>
+
+    <div class="animate disappear-down"><h3>Contato</h3>
+    Para dúvidas ou sugestões, entre em contato pelo e-mail <a href="mailto:wallplaces.app@gmail.com?subject=Support%20-%20Terms%20and%20Conditions&body=I have a question or would like to make a suggestion about:" target="_blank">wallplaces.app@gmail.com</a>.</div><br><br>
+        
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                entry.target.classList.remove('appear-up', 'appear-down', 'disappear-up', 'disappear-down');
+                
+                if (entry.isIntersecting) {
+                    if (entry.boundingClientRect.top > 0) {
+                        entry.target.classList.add('appear-up');
+                    } else {
+                        entry.target.classList.add('appear-down');
+                    }
+                } else {
+                    if (entry.boundingClientRect.top > 0) {
+                        entry.target.classList.add('disappear-down');
+                    } else {
+                        entry.target.classList.add('disappear-up');
+                    }
+                }
+            });
+        }, { threshold: 0.8 });
+
+        document.querySelectorAll('.animate').forEach((element) => observer.observe(element));
+
+        window.addEventListener('scroll', () => {
+            const arrow = document.getElementById('scrollArrow');
+            if (window.scrollY > 0) {
+                arrow.classList.add('hidden');
+            } else {
+                arrow.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
